@@ -10,3 +10,20 @@
   - 작성완료
 
 ### 01/10
+- 5초, 3초, 1초 후에 a, b, c를 각각 출력하는 함수를 만들고 async/await을 이용해 5초, 8초, 9초에 a, b, c가 각각 출력하도록 하는 async 함수를 만들어라.
+- 만든 async 함수 내에서 가장 아래에 throw new Error('error')를 추가하고 아래 코드를 사용해 테스트 해보아라. 0109의 routes/index.js에 넣어 확인해볼것
+```js
+router.get('/async', async function(req, res, next) {
+  try {
+    // await asyncFnYouMake();
+  } catch (err) {
+    next(err);
+  }
+});
+router.use((err, req, res, next) => {
+  console.log(err);
+  res.status(500).json({msg: 'error occur!'});
+});
+
+```
+#
