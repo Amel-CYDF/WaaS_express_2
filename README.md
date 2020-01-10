@@ -44,6 +44,6 @@ router.use((err, req, res, next) => {
   res.status(500).json({msg: 'error occur!'});
 });
 ```
-![0110_ScreenShot](./0110_SreenShot.png)
+![0110_ScreenShot](./0110_ScreenShot.png)
 
 ### 01/11
